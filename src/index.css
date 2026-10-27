@@ -4,10 +4,10 @@
   --line: #e4e6e2;
   --bg: #f6f6f3;
   --surface: #fff;
-  --work: #1e6b52;
-  --rest: #2f4c7a;
+  --work: #00944a;
+  --rest: #0059a6;
   --prepare: #3a3f45;
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: "Manrope", system-ui, sans-serif;
   color: var(--ink);
   background: var(--bg);
   -webkit-tap-highlight-color: transparent;
@@ -44,21 +44,22 @@ button:disabled {
   min-height: 100dvh;
   display: flex;
   justify-content: center;
-  padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom));
+  padding: max(24px, env(safe-area-inset-top)) 24px
+    max(24px, env(safe-area-inset-bottom));
   transition: background-color 0.3s;
 }
 
-.screen[data-phase='work'] {
+.screen[data-phase="work"] {
   background: var(--work);
   color: #fff;
 }
 
-.screen[data-phase='rest'] {
+.screen[data-phase="rest"] {
   background: var(--rest);
   color: #fff;
 }
 
-.screen[data-phase='prepare'] {
+.screen[data-phase="prepare"] {
   background: var(--prepare);
   color: #fff;
 }
